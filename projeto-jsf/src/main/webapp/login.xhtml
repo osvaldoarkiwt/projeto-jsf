@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</h:head>
+<h:body>
+
+	<div style="width:100vw;height:100vh;display:flex;flex-direction:column;
+	align-items:center;justify-content:center">
+		<h3>LOGIN</h3>
+		<h:form>
+			<h:outputLabel value="nome"/>
+			<h:inputText value="#{compraController.cliente.nome}"/>
+			<h:commandButton  value="logar" action="#{compraController.validarLogin}"/>
+
+		</h:form>
+	</div> 
+
+</h:body>
+</html>
